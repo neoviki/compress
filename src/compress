@@ -1,0 +1,32 @@
+#!/bin/bash
+# Compress a file or directory into .tar.gz format
+
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <file_or_directory_to_compress>"
+    exit 1
+fi
+
+INPUT="$1"
+
+if [ ! -e "$INPUT" ]; then
+    echo "Error: '$INPUT' does not exist."
+    exit 1
+fi
+
+# Remove trailing slash if present
+INPUT_CLEANED="${INPUT%/}"
+
+# Get the leaf/base name (e.g., /tmp/test -> test)
+BASENAME="$(basename "$INPUT_CLEANED")"
+
+OUTPUT="./${BASENAME}.tar.gz"
+
+if [ -f "$OUTPUT" ]; then
+    echo "Error: Output file '$OUTPUT' already exists. Delete or rename it first."
+    exit 1
+fi
+
+tar -czf "$OUTPUT" -C "$(dirname "$INPUT_CLEANED")" "$BASENAME"
+
+echo "Compressed to: $OUTPUT"
+
