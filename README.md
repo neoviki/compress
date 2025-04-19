@@ -78,7 +78,7 @@ decompress my_folder.tar.gz
 
 ## Why Use This?
 
-Instead of remembering/typing `tar -czf` or `tar -xzf`, just type:
+Instead of remembering or typing tar -czf followed by both the directory and the output .tar.gz filename or tar -xzf to extract — just type:
 
 - `compress my_project`
 - `decompress my_project.tar.gz`
