@@ -1,5 +1,10 @@
 #!/bin/bash
-# Compress a file or directory into .tar.gz format
+# DESCRIPTION: Compress a file or directory into .tar.gz format
+#
+# AUTHOR  : V NATARAJAN [ VIKI ]
+# CONTACT : WWW.VIKI.DESIGN
+
+
 
 if [ "$#" -ne 1 ]; then
     echo "Usage: $0 <file_or_directory_to_compress>"

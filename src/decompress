@@ -1,5 +1,10 @@
 #!/bin/bash
-# Decompress a .tar.gz archive safely
+# DESCRIPTION: Decompress a .tar.gz archive safely
+#
+# AUTHOR  : V NATARAJAN [ VIKI ]
+# CONTACT : WWW.VIKI.DESIGN
+
+
 
 if [ "$#" -ne 1 ]; then
     echo "Usage: $0 <file.tar.gz>"
