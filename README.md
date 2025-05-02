@@ -1,6 +1,8 @@
-# tar.gz Utility: `compress` and `decompress`
+# Linux Utility: `compress` and `decompress`
 
-A simple Linux utility to compress and decompress files or directories into the .tar.gz format - using straightforward commands that remove the need to remember tar flags or manually specify output filenames. Just run the command followed by the file or folder name to compress. The goal is to optimize and reduce repetitive steps.
+A simple Linux utility to compress and decompress files or directories into the .tar.gz format — using straightforward commands that eliminate the need to remember tar flags or manually set output filenames. Just run the command followed by the folder or archive name.
+
+The goal is to provide a minimal and intuitive way to compress or decompress—just specify the folder or .tar.gz file, with no extra options required.
 
 ---
 
